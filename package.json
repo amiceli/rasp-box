@@ -1,0 +1,18 @@
+{
+  "name": "rasp-box",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "joypad.js": "^2.3.5",
+    "nanostores": "^0.7.4"
+  }
+}
