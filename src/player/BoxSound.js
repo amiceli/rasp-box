@@ -18,8 +18,13 @@ export class BoxSound {
 
     getSound () {
         const path = this.randomPath()
-        
-        return `/public/audios/${path}`
+        const isDev = import.meta.env.DEV
+
+        if (isDev) {
+            return `/public/audios/${path}`
+        } else {
+            return `/audios/${path}`
+        }
     }
 
 }
